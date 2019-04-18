@@ -1,12 +1,9 @@
 Dado("que o endereco da api para manter o cadastro de startup") do
-   # $url_base = "http://5b49f9b0ff11b100149bf42b.mockapi.io/cm/startup"
    #Instanciado pela classe...
-   
 end
 
 Quando("realizar uma resquisicao para cadastrar um startup") do
-    #$response = HTTParty.post($url_base, :body=> {"nome":@nome,"cidade":@cidade})
-    $response1 = @startup.postStartup
+      $response1 = @startup.postStartup
 end
 
 Entao("a api ira retornar os dados do cadastro da startup respondendo o codigo {int}") do |int|
